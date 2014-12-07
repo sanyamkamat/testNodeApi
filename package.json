@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/sanyamkamat/testNodeApi/issues"
   },
-  "homepage": "https://github.com/sanyamkamat/testNodeApi"
+  "homepage": "https://github.com/sanyamkamat/testNodeApi",
+  "dependencies": {
+    "youtube-api": "^0.3.2"
+  }
 }
