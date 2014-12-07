@@ -1,5 +1,4 @@
 var http = require("http");
-var url = require("url");
 var Youtube = require("youtube-api");
 var output = "";
 
@@ -9,8 +8,6 @@ Youtube.authenticate({
 });
 
 var server = http.createServer(function(req,res){
-    var url_parts = url.parse(req.url, true);
-    var query = url_parts.query;
     Youtube.search.list({
         "q":"Node JS training",
         "part": "snippet"
@@ -22,7 +19,6 @@ var server = http.createServer(function(req,res){
             data.items.forEach(function logArrayElements(element, index, array) {
                 output+="<p>Title: "+element.snippet.title+"</p>";
                 output+="<p>Description: "+element.snippet.description+"</p>";
-                output+="<p>Video Link: <a href='https://www.youtube.com/watch?v="+element.id.videoId+"'>"+element.snippet.title+"</a></p>";
                 output+="<p>Thumbnails:<br><img src='"+element.snippet.thumbnails.default.url+"' /></p><hr>";
                 //console.log(data);
             });
