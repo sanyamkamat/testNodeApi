@@ -1,0 +1,23 @@
+{
+  "name": "testNodeApi",
+  "version": "0.0.1",
+  "description": "NodeJS example to demonstrate api usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sanyamkamat/testNodeApi.git"
+  },
+  "keywords": [
+    "node",
+    "api"
+  ],
+  "author": "samx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanyamkamat/testNodeApi/issues"
+  },
+  "homepage": "https://github.com/sanyamkamat/testNodeApi"
+}
